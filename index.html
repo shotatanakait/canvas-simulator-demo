@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p><a href="canvas-image.html">canvas-image.html</a></p>
+  <p><a href="demo1.html">demo1.html</a></p>
+  <p><a href="demo2.html">demo2.html</a></p>
+  <!-- <p><a href="demo3.html">demo3.html</a></p> -->
+  <!-- <p><a href="demo4.html">demo4.html</a></p> -->
+  <!-- <p><a href="demo5.html">demo5.html</a></p> -->
+  <p><a href="demo6.html">demo6.html</a></p>
+  <div class="contents">
+
+
+    <!-- canvas-object-wrapper -->
+    <!-- <div class="canvas-object-wrapper">
+      <div>
+        <a href="https://qiita.com/kyrieleison/items/26fcfb3a1d94bc92c596">https://qiita.com/kyrieleison/items/26fcfb3a1d94bc92c596</a>
+      </div>
+      <div class="design-wrapper">
+        <div id="design-area" class="canvas-wrapper">
+          <canvas class="canvas" width="300" height="300" id="canvas"></canvas>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- div で実装するパターン -->
+    <div class="div-wrapper">
+      <a href="https://q-az.net/elements-drag-and-drop/">https://q-az.net/elements-drag-and-drop/</a>
+      <div class="common drag-and-drop red" id="red">red</div>
+      <div class="common drag-and-drop blue" id="blue">blue</div>
+      <div class="common drag-and-drop yellow" id="yellow">yellow</div>
+
+      <!-- 修正1 -->
+      <div class="color-wrapper">
+        red: <input id="color1" type="color" value="#ff0000">
+        blue: <input id="color2" type="color" value="#0000ff">
+        yellow: <input id="color3" type="color" value="#ffff00">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <script src="js/app.js"></script> -->
+  <script src="js/canvas-object-wrapper.js"></script>
+  <script src="js/div.js"></script>
+  <script src="js/my-demo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="js/canvas-image.js"></script>
+</body>
+</html>

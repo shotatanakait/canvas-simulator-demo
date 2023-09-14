@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/demo6.css">
+</head>
+
+<body>
+  <div class="contents">
+
+    <!-- demo6 -->
+    <h2 class="canvas-image-h2">demo6</h2>
+    <!-- for konva.js -->
+    <div id="container" class="container"></div>
+
+    <p class="file-select">画像: <input type="file" id="img-select" accept=".png"></p>
+    <p class="file-select">スタンプ: <input type="file" id="stamp-select" accept=".png"></p>
+    <p class="text-edit">
+      <input type="text" id="text-input" placeholder="テキスト">
+      <button type="button" id="text-up">テキスト UP</button>
+      <input type="color" id="text-color" value="#000000">
+    </p>
+  </div>
+
+  <p>
+    <button id="left-rotate">左 rotate</button>
+    <button id="right-rotate">右 rotate</button>
+  </p>
+  <p>
+    <button id="small">縮小</button>
+    <button id="large">拡大</button>
+  </p>
+  <p>
+    <button id="destroy">削除</button>
+    <button id="save">保存</button>
+  </p>
+
+  <a href="index.html">index.html</a>
+
+
+  <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+  <script src="js/demo6.js"></script>
+</body>
+
+</html>

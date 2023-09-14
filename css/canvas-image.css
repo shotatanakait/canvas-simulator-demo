@@ -1,0 +1,23 @@
+/* canvas-image */
+.canvas-image-wrapper {
+  touch-action: none;
+  display: flex;
+  justify-content: center;
+}
+
+.canvas-image {
+  border: 3px dotted #666;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.canvas-image-h2 {
+  margin: 0px;
+}
+
+.image-canvas {
+  background-color: #eee;
+  box-sizing: border-box;
+}

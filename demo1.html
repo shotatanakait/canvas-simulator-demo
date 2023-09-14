@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/demo1.css">
+</head>
+
+<body>
+  <div class="contents">
+
+    <!-- demo1 -->
+    <h2 class="canvas-image-h2">demo1</h2>
+    <input type="file" id="file" accept=".png,.jpeg,.jpg">
+
+    <div class="canvas-image">
+      <div class="canvas-image-wrapper" id="canvas-image-wrapper">
+        <canvas class="image-canvas" id="image-canvas" width="300" height="300"></canvas>
+      </div>
+    </div>
+
+    <button type="button" id="left-rotate">left rotate</button>
+    <button type="button" id="right-rotate">right rotate</button>
+
+  </div>
+
+  <a href="index.html">index.html</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="js/demo1.js"></script>
+</body>
+
+</html>

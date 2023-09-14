@@ -1,0 +1,96 @@
+.current_obj {
+  background-color: rgba(128, 128, 128, .2);
+  border: 3px solid #999;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+/* contents */
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* canvas-object-wrapper */
+.canvas-object-wrapper {
+  border: 3px dotted #666;
+  padding: 30px;
+  width: 500px;
+}
+.design-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.canvas-wrapper {
+  margin-left: 0px;
+}
+.canvas {
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+/* div */
+.div-wrapper {
+  position: relative;
+  border: 3px dotted #666;
+  height: 300px;
+  padding: 30px;
+  width: 500px;
+}
+.red {
+  position: absolute;
+  left: calc(30px);
+  top: 100px;
+}
+.blue {
+  position: absolute;
+  left: calc(30px + 140px);
+  top: 100px;
+}
+.yellow {
+  position: absolute;
+  left: calc(30px);
+  top: 150px;
+}
+
+.color-wrapper {
+  position: absolute;
+  bottom: 100px;
+}
+
+.common {
+  width: 100px;
+  height: 40px;
+  line-height: calc(40px - 6px);
+  box-sizing: border-box;
+  background-color: rgba(128, 128, 128, .2);
+  border: 3px solid #999;
+  text-align: center;
+}
+
+.drag-and-drop {
+  cursor: move;
+  position: absolute;
+  z-index: 1000;
+}
+
+.drag {
+  z-index: 1001;
+}
+
+/* my-demo */
+.my-demo {
+  border: 3px dotted #666;
+  padding: 30px;
+  width: 500px;
+}
+
+.my-demo-h2 {
+  margin: 0;
+}
+
+.base-canvas {
+  background-color: #eee;
+  box-sizing: border-box;
+}
