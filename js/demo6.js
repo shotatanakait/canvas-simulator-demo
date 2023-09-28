@@ -132,8 +132,13 @@
     document.getElementById("img-select").disabled = true;
   }
 
+  var myStamp = null;
+
   function drawStamp(imageObj) {
-    var myImg = new Konva.Image({
+    if (myStamp) {
+      myStamp.remove();
+    }
+    myStamp = new Konva.Image({
       image: imageObj,
       // width: imageObj.width,
       // height: imageObj.height,
@@ -148,21 +153,22 @@
       draggable: true,
       name: "stamp",
     });
-    group2.add(myImg);
+    // group2.remove();
+    group2.add(myStamp);
 
-    var tr = setTransformer(myImg);
+    var tr = setTransformer(myStamp);
 
     group2.add(tr);
 
     // mouse cursor
-    myImg.on("mouseover", () => {
+    myStamp.on("mouseover", () => {
       document.body.style.cursor = "pointer";
     });
-    myImg.on("mouseout", () => {
+    myStamp.on("mouseout", () => {
       document.body.style.cursor = "default";
     });
 
-    document.getElementById("stamp-select").disabled = true;
+    // document.getElementById("stamp-select").disabled = true;
   }
 
   function setTransformer(targetObj) {
@@ -316,7 +322,7 @@
 
       var dataURL = stage.toDataURL({
         // pixelRatio: 300 / 72,
-        pixelRatio: 525 / 300,
+        pixelRatio: 550 / 300,
       });
       downloadURI(dataURL, "canvas-download.png");
     },
